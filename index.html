@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TasteBuds Kitchen</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f1;
+      color: #333;
+    }
+    header {
+      background-color: #ff6b6b;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://source.unsplash.com/1600x400/?cooking,kitchen');
+      background-size: cover;
+      background-position: center;
+      padding: 6rem 2rem;
+      text-align: center;
+      color: white;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .recipes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .recipe-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 250px;
+    }
+    .recipe-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .recipe-card h3 {
+      margin: 0.5rem;
+      font-size: 1.2rem;
+    }
+    footer {
+      background: #444;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 0.8rem 1.2rem;
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TasteBuds Kitchen</h1>
+  <nav>
+    <a href="#recipes">Recipes</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Where Flavor Meets Passion</h2>
+  <p>Discover easy, delicious recipes and elevate your kitchen skills.</p>
+</section>
+
+<section id="recipes" class="section">
+  <h2>Featured Recipes</h2>
+  <div class="recipes">
+    <div class="recipe-card">
+      <img src="https://source.unsplash.com/400x300/?pasta" alt="Pasta">
+      <h3>Creamy Garlic Pasta</h3>
+    </div>
+    <div class="recipe-card">
+      <img src="https://source.unsplash.com/400x300/?cookies" alt="Cookies">
+      <h3>Chewy Chocolate Chip Cookies</h3>
+    </div>
+    <div class="recipe-card">
+      <img src="https://source.unsplash.com/400x300/?soup" alt="Soup">
+      <h3>Hearty Vegetable Soup</h3>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>TasteBuds Kitchen is your go-to space for mastering home cooking. Whether you're just learning to boil water or you're a seasoned home chef, we bring you approachable recipes and cooking classes to level up your skills.</p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>Want to book a class or have a question? Send us a message below!</p>
+  <form>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Your Name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Your Email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 TasteBuds Kitchen. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
